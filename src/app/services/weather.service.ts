@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class WeatherService {
   private apiKey = '65d072d7125f7f03fa37c5ca65a23eed';
-  private apiURL = 'http://api.weatherstack.com/current';
+  private apiURL = 'https://api.weatherstack.com/current';
 
   constructor(private http: HttpClient) { }
 
