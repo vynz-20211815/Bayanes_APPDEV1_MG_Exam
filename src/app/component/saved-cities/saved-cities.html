@@ -1,0 +1,19 @@
+<nav class="navbar">
+    <a routerLink="" class="nav-link">Home</a>
+    <a routerLink="saved" class="nav-link active">Saved Cities</a>
+</nav>
+
+<div class="saved-cities container">
+    <h2>Saved Cities</h2>
+
+    <div *ngIf="savedCities.length === 0">
+        <p>No saved cities yet.</p>
+    </div>
+
+    <ul>
+        <li *ngFor="let city of savedCities">
+            <span>{{ city.name }} - {{ city.temperature }}°C</span>
+            <button (click)="removeCity(city.name)" class="btn-remove">Remove</button>
+        </li>
+    </ul>
+</div>

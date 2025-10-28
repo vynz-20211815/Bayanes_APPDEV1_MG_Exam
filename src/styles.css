@@ -1,1 +1,126 @@
-/* You can add global styles to this file, and also import other style files */
+/* General container styling */
+body {
+    background-color: #E9E6DD;
+}
+
+.container {
+    margin: 50px auto;
+    max-width: 700px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar */
+.navbar {
+    background-color: #0078d7;
+    padding: 12px 0;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.nav-link {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.nav-link.active {
+    text-decoration: underline;
+}
+
+/* Table and input styling */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+input.form-control {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background-color: #C4AD9D;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+}
+
+.btn-primary:hover {
+    background-color: #005fa3;
+}
+
+/* Weather display */
+.weather-result {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.weather-result img {
+    width: 80px;
+    margin: 10px 0;
+}
+
+.btn-save {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn-save:hover {
+    background-color: #218838;
+}
+
+/* Error message */
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Saved cities list */
+.saved-cities ul {
+    list-style: none;
+    padding: 0;
+}
+
+.saved-cities li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+}
+
+.btn-remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn-remove:hover {
+    background-color: #c82333;
+}
