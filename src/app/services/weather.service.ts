@@ -13,6 +13,6 @@ export class WeatherService {
 
   getWeather(city: string): Observable<any> {
     const url = `${this.apiURL}?access_key=${this.apiKey}&query=${city}`;
-    return this.http.get(url);
+    return this.https.get(url);
   }
 }
